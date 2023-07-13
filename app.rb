@@ -71,5 +71,7 @@ get("/random/results") do
 
   @the_max = params.fetch("user_max").to_f
 
+  @the_rand_result = rand(@the_min..@the_max)
+
   erb(:random_results)
 end
