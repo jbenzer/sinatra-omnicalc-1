@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1> Payment Results </h1>
+    <dl>
+      <dt>APR</dt>
+      <dd><%= @the_APR.to_fs(:percentage) %></dd>
+      <dt>Number of years</dt>
+      <dd><%= @the_YRS %></dd>
+      <dt>Principal</dt>
+      <dd><%= @the_Principal.to_fs(:currency) %></dd>
+      <dt>Payment</dt>
+      <dd><%= @the_payment %></dd>
+    </dl>
+    <a href="/payment/new">Calculate another payment</a>
+  </body>
+</html>
